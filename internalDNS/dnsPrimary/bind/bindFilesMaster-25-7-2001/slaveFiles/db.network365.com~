@@ -1,0 +1,20 @@
+; BIND version named 8.2.3-REL-NOESW Sat Jan 27 01:46:37 MST 2001
+; BIND version bdale@winfree:/home/bdale/debian/bind-8.2.3/src/bin/named
+; zone 'network365.com'   first transfer
+; from 192.168.42.252:53 (local 192.168.42.253) using AXFR at Tue Jun 19 22:52:53 2001
+$ORIGIN com.
+network365	604800	IN	SOA	dns1.network365.com. syssupport.network365.com. (
+		2001061901 10800 3600 604800 86400 )
+	604800	IN	NS	dns1.network365.com.
+	604800	IN	NS	dns2.network365.com.
+	604800	IN	TXT	"Network365 Ltd"
+	604800	IN	MX	10 mail.network365.com.
+$ORIGIN network365.com.
+falcon	604800	IN	A	192.168.42.251
+dns1	604800	IN	A	192.168.42.252
+class	604800	IN	A	192.168.42.10
+bashful	604800	IN	A	192.168.42.12
+dns2	604800	IN	A	192.168.42.253
+sneezy	604800	IN	A	192.168.42.11
+localhost	604800	IN	A	127.0.0.1
+mail	604800	IN	A	192.168.42.31

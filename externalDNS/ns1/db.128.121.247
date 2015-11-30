@@ -1,0 +1,11 @@
+; BIND version named 8.2.3-REL-NOESW Sat Jan 27 01:46:37 MST 2001
+; BIND version bdale@winfree:/home/bdale/debian/bind-8.2.3/src/bin/named
+; zone '247.121.128.in-addr.arpa'   first transfer
+; from 128.121.247.43:53 (local 213.190.152.250) using AXFR at Mon May 21 20:58:08 2001
+$ORIGIN 121.128.in-addr.arpa.
+247	604800	IN	SOA	ns1.network365.com. syssupport.network365.com. (
+		1 604800 86400 2419200 604800 )
+	604800	IN	NS	ns1.network365.com.
+	604800	IN	NS	ns2.network365.com.
+$ORIGIN 247.121.128.in-addr.arpa.
+43	604800	IN	PTR	ns2.network365.com.
